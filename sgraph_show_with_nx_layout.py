@@ -1,3 +1,8 @@
+import graphlab as gl
+sg = gl.SGraph()
+# add some example edges -- replace with your own graph
+sg = sg.add_edges([gl.Edge(i, i+1) for i in range(10)])
+
 import networkx as nx
 g = nx.Graph()
 
