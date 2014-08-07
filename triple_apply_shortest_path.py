@@ -6,11 +6,9 @@ import time
 def sssp_update_fn(src, edge, dst):
     sdist = src['distance']
     ddist = dst['distance']
-    newDist = sdist + 1
-    newDist = min(ddist, newDist)
-    if not dst['changed']:
-        dst['changed'] = ddist != newDist
-    dst['distance'] = newDist
+    if sdist + 1 < ddist:
+        dst['changed'] = True
+        dst['distance'] = sdist + 1
     return (src, edge, dst)
 
 
