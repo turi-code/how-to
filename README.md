@@ -1,6 +1,3 @@
-How-To
-======
-
 * [Convert a column of date strings into UNIX timestamps](convert_column_to_timestamp.py)
 * [Load Yelp academic dataset](load_yelp_dataset.py)
 * [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
