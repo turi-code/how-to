@@ -8,4 +8,4 @@
 * [Implement single source shortest path using triple_apply](triple_apply_shortest_path.py)
 * [Implement weighted pagerank using triple_apply](triple_apply_weighted_pagerank.py)
 
-We welcome feedback and pull requests! Feel free to [open an issue](https://github.com/graphlab-code/how-to/issues), [give us feedback](http://graphlab.com/company/contact.html), or [submit a pull request](https://help.github.com/articles/using-pull-requests) through GitHub. Code submitted through pull requests will be made available under the [CC0 1.0 Universal license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
+Code submitted through pull requests will be made available under the [CC0 1.0 Universal license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
