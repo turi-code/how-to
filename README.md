@@ -7,6 +7,8 @@
 * [Join vertex data on SGraph](join_vertex_data_on_sgraph.py)
 * [Implement single source shortest path using triple_apply](triple_apply_shortest_path.py)
 * [Implement weighted pagerank using triple_apply](triple_apply_weighted_pagerank.py)
+* [Expand an SFrame column of type list/dict into multiple columns](sframe_unpack.py)
+* [Collapse multiple columns of an SFrame into a single column of type list/dict](sframe_pack.py)
 * [Find the unique words used in an SArray of text documents](sarray_corpus.py)
 
 Code submitted through pull requests will be made available under the [CC0 1.0 Universal license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
