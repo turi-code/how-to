@@ -36,11 +36,8 @@ def xml_filename_to_dict(filename):
 # file-200.xml
 
 # Read the names of the files in to an SFrame
-all_files = gl.SFrame.read_csv('all_files.csv', header=False)
-all_files.rename({'X1': 'filename'})
+data = gl.SFrame.read_csv('all_files.csv', header=False)
+data.rename({'X1': 'filename'})
 
-# Parse contents of xml files into a dictionary and update the SFrame 
-# with the data (one xml file per row)
-data = gl.SFrame()
-data['xml-dictionary'] = all_files['filename'].apply(lambda x: xml_filename_to_dict(x))
+data['xml-dict'] = data['filename'].apply(lambda x: xml_filename_to_dict(x))
 
