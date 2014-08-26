@@ -15,7 +15,7 @@ sf = gl.SFrame({
 # Method 1: SFrame Logical Filter
 sf_filter = sf[sf['flight_time'] > 0] 
 # Method 2: SFrame apply() function
-sf_filter = sf[sf['flight_time'] > 0] 
+sf_filter = sf[sf.apply(lambda x: x['flight_time'] > 0)] 
 
 # Select flights from either carriers 'US' or 'LY' or plane type 727
 # ----------------------------------------------------------------------------
