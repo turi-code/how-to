@@ -2,7 +2,7 @@
 
 import graphlab as gl
 
-def get_corpus(docs):
+def get_vocabulary(docs):
   """
   Returns the set of unique words in an SArray of documents
   Args:
@@ -25,5 +25,5 @@ def get_corpus(docs):
 
 # Sample SArray
 docs = gl.SArray(['The quick', 'brown fox', 'jumps over the', 'lazy dog'])
-corpus = get_corpus(docs)
+corpus = get_vocabulary(docs)
 
