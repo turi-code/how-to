@@ -1,5 +1,3 @@
-# Title: Expand an SFrame column of type list/dict into multiple columns
-
 import graphlab as gl
 
 # An SFrame with a column 'wc' of type (dict) 
