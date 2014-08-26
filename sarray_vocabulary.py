@@ -1,5 +1,3 @@
-#Title: Find the unique words used in an SArray of text documents
-
 import graphlab as gl
 
 def get_vocabulary(docs):
@@ -16,7 +14,8 @@ def get_vocabulary(docs):
   docs_sf['words'] = docs.count_words()
 
   # Stack the dictionary into individual word-count pairs.
-  docs_sf = docs_sf.stack('words', new_column_name=['word', 'count'])
+  docs_sf = docs_sf.stack('words', 
+                         new_column_name=['word', 'count'])
 
   # Count the number of unique words (remove None values)
   corpus = docs_sf['word'].unique()
@@ -24,6 +23,7 @@ def get_vocabulary(docs):
   return corpus
 
 # Sample SArray
-docs = gl.SArray(['The quick', 'brown fox', 'jumps over the', 'lazy dog'])
+docs = gl.SArray(['The quick', 'brown fox', 
+                         'jumps over the', 'lazy dog'])
 corpus = get_vocabulary(docs)
 
