@@ -1,5 +1,3 @@
-# Title: Collapse multiple columns of an SFrame into a single column of type list/dict
-
 import graphlab as gl
 
 sf = gl.SFrame({'business': [1,2,3,4], 
