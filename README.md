@@ -5,6 +5,7 @@ Want to request a new How-To or have feedback on one listed below? Please open a
 * [Convert a column of date strings into UNIX timestamps](convert_column_to_timestamp.py)
 * [Load Yelp academic dataset and build simple recommender](load_yelp_dataset.py)
 * [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
+* [Parse XML files and store the contents in an SFrame](sframe_xml_to_dict.py)
 * [Parse a date/time string to numeric fields](parse_string_time.py)
 * [Filter SFrame rows by user defined logic](select_subset_rows.py)
 * [Remove duplicate edges from SGraph](remove_duplicate_edges.py)
