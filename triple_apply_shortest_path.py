@@ -1,7 +1,5 @@
-# Title: Implement shortest_path using SGraph.triple_apply
 import graphlab as gl
 import time
-
 
 def sssp_update_fn(src, edge, dst):
     sdist = src['distance']
@@ -11,10 +9,10 @@ def sssp_update_fn(src, edge, dst):
         dst['distance'] = sdist + 1
     return (src, edge, dst)
 
-
 def sssp_triple_apply(input_graph, src_vid, max_distance=1e30):
     g = gl.SGraph(input_graph.vertices, input_graph.edges)
-    g.vertices['distance'] = g.vertices['__id'].apply(lambda x: max_distance if x != src_vid else 0.0)
+    g.vertices['distance'] = \
+      g.vertices['__id'].apply(lambda x: max_distance if x != src_vid else 0.0)
     it = 0
     num_changed = len(g.vertices)
     start = time.time()
@@ -27,9 +25,9 @@ def sssp_triple_apply(input_graph, src_vid, max_distance=1e30):
     print 'Triple apply sssp finished in: %f secs' % (time.time() - start)
     return g
 
-#### Load graph
+# Load graph
 g = gl.load_graph('http://snap.stanford.edu/data/email-Enron.txt.gz', 'snap')
 
-#### Run triple apply sssp
+# Run triple apply sssp
 triple_apply_sssp_distance = sssp_triple_apply(g, src_vid=0)
 print triple_apply_sssp_distance
