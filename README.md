@@ -1,5 +1,5 @@
 Want to contribute a GraphLab Create How-To? We welcome [pull requests](https://github.com/graphlab-code/how-to/pulls).
-Want to request a new How-To or have feedback on one listed below? Please open a Git [issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue) or send us [feedback](http:graphlab.com/company/contact.html). 
+Want to request a new How-To or have feedback on one listed below? Please open a Git [issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue) or send us [feedback](http://graphlab.com/company/contact.html). 
 
 
 * [Convert a column of date strings into UNIX timestamps](convert_column_to_timestamp.py)
