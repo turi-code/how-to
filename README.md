@@ -16,5 +16,7 @@ Want to request a new How-To or have feedback on one listed below? Please open a
 * [Collapse multiple columns of an SFrame into a single column of type list/dict](sframe_pack.py)
 * [Find the unique words used in an SArray of text documents](sarray_vocabulary.py)
 * [Filter/Select rows from an SFrame](select_subset_rows.py)
+* [Run a function on the crossproduct of option values](experiment_over_parameters.py)
+
 
 Code submitted through pull requests will be made available under the [CC0 1.0 Universal license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
