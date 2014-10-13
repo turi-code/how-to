@@ -2,7 +2,9 @@ Want to contribute a GraphLab Create How-To? We welcome [pull requests](https://
 
 Want to request a new How-To or have feedback on one listed below? Please open a Git [issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue) or send us [feedback](http://graphlab.com/company/contact.html). 
 
-
+* [Convert a column of datetime into UNIX timestamps](convert_datetime_column_to_timestamp.py)
+* [Convert a column of datetime into string and convert back to datetime](convert_datetime_column_to_string_back_to_datetime.py)
+* [Split a datetime column into year, month, and timezone](split_datetime_column.py)
 * [Convert a column of date strings into UNIX timestamps](convert_column_to_timestamp.py)
 * [Load Yelp academic dataset and build simple recommender](load_yelp_dataset.py)
 * [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
