@@ -3,20 +3,15 @@
 # You need the following package for this
 # Installation : pip install pillow
 # Source : http://pillow.readthedocs.org/en/latest/index.html
-from PIL import Image as PIL_image
+import PIL.Image
 import graphlab as gl
 import  urllib2 as urllib
 import io
 
-JPG = "JPG"
-PNG = "PNG"
-RAW = "RAW"
-UNDEFINED = "UNDEFINED"
 
 
-CURRENT_VERSION = 0
 
-_format = {JPG: 0, PNG: 1, RAW: 2, UNDEFINED: 3}
+_format = {'JPG': 0, 'PNG': 1, 'RAW': 2, 'UNDEFINED': 3}
 
 def from_pil_image(pil_img):
     """
@@ -44,12 +39,12 @@ def from_pil_image(pil_img):
     else:
         image_data = bytearray([z for l in pil_img.getdata() for z in l])
         channels = 4
-    format_enum = _format[RAW]
+    format_enum = _format['RAW']
     image_data_size = len(image_data)
 
     # Construct a graphlab.Image
 
-    img = gl.Image(_image_data=image_data, _width=width, _height=height, _channels=channels, _format_enum=format_enum, _image_data_size=image_data_size, _version=CURRENT_VERSION)
+    img = gl.Image(_image_data=image_data, _width=width, _height=height, _channels=channels, _format_enum=format_enum, _image_data_size=image_data_size)
     return img
 
 # Sample conversion
@@ -59,6 +54,6 @@ fd = urllib.urlopen("http://s3.amazonaws.com/gl-testdata/images/sample.jpg")
 image_file = io.BytesIO(fd.read())
 
 # Convert from PIL to graphlab
-pil_img = PIL_image.open(image_file)
+pil_img = PIL.Image.open(image_file)
 gl_img = from_pil_image(pil_img)
 
