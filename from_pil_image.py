@@ -1,5 +1,3 @@
-# Title : Convert a PIL Image to a Graphlab Image.
-
 # You need the following package for this
 # Installation : pip install pillow
 # Source : http://pillow.readthedocs.org/en/latest/index.html
