@@ -17,8 +17,8 @@ Want to request a new How-To or have feedback on one listed below? Please open a
 * [Find the unique words used in an SArray of text documents](sarray_vocabulary.py)
 * [Filter/Select rows from an SFrame](select_subset_rows.py)
 * [Run a function on the crossproduct of option values](experiment_over_parameters.py)
-* [Convert a PIL.Image to a  graphlab.Image](from_pil_image.py)
+* [Convert a PIL.Image to a graphlab.Image](from_pil_image.py)
 * [Convert a graphlab.Image to a PIL.Image](to_pil_image.py)
-* [Convert an SArray of array.array to an SArray of graphlab.Image ](array_to_image.py)
+* [Convert an SArray of array.array to an SArray of graphlab.Image](array_to_image.py)
 
 Code submitted through pull requests will be made available under the [CC0 1.0 Universal license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
