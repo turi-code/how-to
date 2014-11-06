@@ -18,6 +18,18 @@ logs = sa.apply(lambda x: math.log(x))
 # Getting the absolute value for each row:
 pos = sa.apply(lambda x: abs(x))
 
+# using timeit:
+abs_results = timeit.timeit(stmt='[ abs(x) for x in sa ]', 
+                            setup='import graphlab; sa = graphlab.SArray(range(1,1000001))', 
+                            number=1)
+glc_abs_results = timeit.timeit(stmt='sa.apply(lambda x: abs(x))', 
+                                setup='import graphlab; sa = graphlab.SArray(range(1,1000001))', 
+                                number=1)
+
+print "Absolute value: "
+print "Using [ abs(x) for x in sa ] (implicit list conversion): %g" % abs_results # laptop results: 1.6541240215301514
+print "Using sa.apply(lambda x: abs(x)): %g" % glc_abs_results                    # laptop results: 0.010690927505493164
+
 # When performing other basic stats operations, it is much more efficient to 
 # use the implementations provided by SArrays. This avoids implicit 
 # conversions to Python lists and keeps the operations in the C++ engine.
@@ -27,8 +39,8 @@ max = sa.max()
 min = sa.min()
 std = sa.std()
 
-sa_results = timeit.timeit(stmt='sa.max()', setup='import graphlab; sa = graphlab.SArray(range(1,1000001))', number=1)
 max_results = timeit.timeit(stmt='max(sa)', setup='import graphlab; sa = graphlab.SArray(range(1,1000001))', number=1)
+sa_results = timeit.timeit(stmt='sa.max()', setup='import graphlab; sa = graphlab.SArray(range(1,1000001))', number=1)
 
 print "Using max(sa): %g" % max_results         # laptop results: 1.79631s
 print "Using SArray.max(): %g" % sa_results     # laptop results: 0.015002s
