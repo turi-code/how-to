@@ -22,5 +22,6 @@ Want to request a new How-To or have feedback on one listed below? Please open a
 * [Convert an SArray of array.array to an SArray of graphlab.Image](array_to_image.py)
 * [Convert an SArray of URL strings to an SArray of graphlab.Image](url_to_img.py)
 * [Efficiently Calculating Basic Statistics in SArray/SFrame](sarray_basic_stats.py)
+* [Find the top-k rows for each value of a group variable](top_k.py)
 
 Code submitted through pull requests will be made available under the [CC0 1.0 Universal license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
