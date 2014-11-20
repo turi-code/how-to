@@ -1,5 +1,4 @@
 # Title: Convert a column of datetime strings into UNIX timestamps
-
 import graphlab as gl
 
 # Define a SFrame. Here the date-time is of type str
