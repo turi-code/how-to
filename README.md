@@ -1,27 +1,55 @@
-Want to contribute a GraphLab Create How-To? We welcome [pull requests](https://github.com/graphlab-code/how-to/pulls). Please read the [contributor guide](https://github.com/graphlab-code/how-to/blob/master/CONTRIBUTING.md).
+Want to contribute a GraphLab Create How-To? We welcome [pull
+requests](https://github.com/graphlab-code/how-to/pulls). Please read the
+[contributor
+guide](https://github.com/graphlab-code/how-to/blob/master/CONTRIBUTING.md).
 
-Want to request a new How-To or have feedback on one listed below? Please open a Git [issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue) or send us [feedback](http://graphlab.com/company/contact.html). 
+Want to request a new How-To or have feedback on one listed below? Please open
+a Git
+[issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue)
+or send us [feedback](http://graphlab.com/company/contact.html). 
 
-* [Parse a datetime column into its components (year, month, etc.)](split_datetime_column.py)
-* [Convert a column of datetime strings into UNIX timestamps](convert_column_to_timestamp.py)
-* [Load Yelp academic dataset and build simple recommender](load_yelp_dataset.py)
-* [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
+Data Ingress
+-------------
+* [Load a JSON file into an SFrame](load_json.py)
 * [Parse XML files and store the contents in an SFrame](sframe_xml_to_dict.py)
-* [Remove duplicate edges from SGraph](remove_duplicate_edges.py)
-* [Join vertex data on SGraph](join_vertex_data_on_sgraph.py)
-* [Implement single source shortest path using triple_apply](triple_apply_shortest_path.py)
-* [Implement weighted pagerank using triple_apply](triple_apply_weighted_pagerank.py)
-* [Expand an SFrame column of type list/dict into multiple columns](sframe_unpack.py)
-* [Collapse multiple columns of an SFrame into a single column of type list/dict](sframe_pack.py)
-* [Find the unique words used in an SArray of text documents](sarray_vocabulary.py)
+
+Tabular Data Transformation
+-----------------------------
 * [Filter/Select rows from an SFrame](select_subset_rows.py)
-* [Run a function on the crossproduct of option values](experiment_over_parameters.py)
-* [Convert a PIL.Image to a graphlab.Image](from_pil_image.py)
-* [Convert a graphlab.Image to a PIL.Image](to_pil_image.py)
-* [Convert an SArray of array.array to an SArray of graphlab.Image](array_to_image.py)
-* [Convert an SArray of URL strings to an SArray of graphlab.Image](url_to_img.py)
 * [Efficiently Calculating Basic Statistics in SArray/SFrame](sarray_basic_stats.py)
 * [Find the top-k rows for each value of a group variable](top_k.py)
+* [Collapse multiple columns of an SFrame into a single column of type list/dict](sframe_pack.py)
+* [Parse a datetime column into its components (year, month, etc.)](split_datetime_column.py)
+* [Convert a column of datetime strings into UNIX timestamps](convert_column_to_timestamp.py)
+* [Expand an SFrame column of type list/dict into multiple columns](sframe_unpack.py)
+
+Graph Data Transformation
+---------------------------
+* [Join vertex data on SGraph](join_vertex_data_on_sgraph.py)
+* [Remove duplicate edges from SGraph](remove_duplicate_edges.py)
 * [Check if one SGraph is a subgraph of a second SGraph](check_subgraph.py)
 
-Code submitted through pull requests will be made available under the [CC0 1.0 Universal license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
+Text Analytics
+---------------
+* [Find the unique words used in an SArray of text documents](sarray_vocabulary.py)
+
+Image Analytics
+---------------
+* [Convert an SArray of URL strings to an SArray of graphlab.Image](url_to_img.py)
+* [Convert an SArray of array.array to an SArray of graphlab.Image](array_to_image.py)
+* [Convert a PIL.Image to a graphlab.Image](from_pil_image.py)
+* [Convert a graphlab.Image to a PIL.Image](to_pil_image.py)
+
+Graph Analytics
+-----------------
+* [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
+* [Implement single source shortest path using triple_apply](triple_apply_shortest_path.py)
+* [Implement weighted pagerank using triple_apply](triple_apply_weighted_pagerank.py)
+
+Miscellaneous
+--------------
+* [Run a function on the crossproduct of option values](experiment_over_parameters.py)
+
+Code submitted through pull requests will be made available under the [CC0 1.0
+Universal
+license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
