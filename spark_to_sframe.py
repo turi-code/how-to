@@ -1,4 +1,4 @@
-# Import/Expport data from a Spark cluster 
+# Import/Export data from a Spark cluster 
 from pyspark import SparkContext
 import graphlab as gl
 

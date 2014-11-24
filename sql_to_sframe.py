@@ -1,4 +1,4 @@
-# Import/Expport data from a database using SQL
+# Import/Export data from a database using SQL
 import graphlab as gl
 
 # The user guide contains details on how to setup the connection to the database.
