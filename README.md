@@ -15,6 +15,7 @@ Data Ingress
 * [Import data from your databases using SQL](sql_to_sframe.py)
 * [Load a JSON file into an SFrame](load_json.py)
 * [Load a collection XML files into an SFrame](sframe_xml_to_dict.py)
+* [Load an Avro file into an SFrame](load_avro.py)
 
 Tabular Data Transformation
 -----------------------------
