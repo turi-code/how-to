@@ -10,8 +10,11 @@ or send us [feedback](http://graphlab.com/company/contact.html).
 
 Data Ingress
 -------------
+* [Import data from Pandas Series/Dataframes](pandas_to_glc.py)
+* [Import data from your Spark cluster](spark_to_sframe.py)
+* [Import data from your databases using SQL](sql_to_sframe.py)
 * [Load a JSON file into an SFrame](load_json.py)
-* [Parse XML files and store the contents in an SFrame](sframe_xml_to_dict.py)
+* [Load a collection XML files into an SFrame](sframe_xml_to_dict.py)
 * [Load an Avro file into an SFrame](load_avro.py)
 
 Tabular Data Transformation
