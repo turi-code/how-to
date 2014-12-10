@@ -36,6 +36,7 @@ Graph Data Transformation
 Text Analytics
 ---------------
 * [Find the unique words used in an SArray of text documents](sarray_vocabulary.py)
+* [Compute word frequencies for each word in an SArray of text documents](word_frequency.py)
 
 Image Analytics
 ---------------
