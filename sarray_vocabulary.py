@@ -11,7 +11,7 @@ def get_vocabulary(docs):
 
   # Use the count_words function to count the number of words.
   docs_sf = gl.SFrame()
-  docs_sf['words'] = docs.count_words()
+  docs_sf['words'] = gl.text.count_words(docs)
 
   # Stack the dictionary into individual word-count pairs.
   docs_sf = docs_sf.stack('words', 
