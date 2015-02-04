@@ -53,6 +53,7 @@ Graph Analytics
 Visualization
 --------------
 * [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
+* [Show SGraph with bipartite vertex coloring](sgraph_show_with_bipartite_vertex_coloring.py)
 * [Show SGraph with custom vertex coloring](sgraph_show_with_vertex_coloring.py)
 * [Show time-series data as a line chart in Canvas](line_chart_by_date.py)
 
