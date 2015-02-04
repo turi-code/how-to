@@ -46,9 +46,13 @@ Image Analytics
 
 Graph Analytics
 -----------------
-* [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
 * [Implement single source shortest path using triple_apply](triple_apply_shortest_path.py)
 * [Implement weighted pagerank using triple_apply](triple_apply_weighted_pagerank.py)
+
+Visualization
+--------------
+* [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
+* [Show time-series data as a line chart in Canvas](line_chart_by_date.py)
 
 Miscellaneous
 --------------
