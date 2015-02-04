@@ -6,7 +6,7 @@ guide](https://github.com/graphlab-code/how-to/blob/master/CONTRIBUTING.md).
 Want to request a new How-To or have feedback on one listed below? Please open
 a Git
 [issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue)
-or send us [feedback](http://graphlab.com/company/contact.html). 
+or send us [feedback](http://dato.com/company/contact.html). 
 
 Data Ingress
 -------------
