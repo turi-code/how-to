@@ -6,7 +6,7 @@ guide](https://github.com/graphlab-code/how-to/blob/master/CONTRIBUTING.md).
 Want to request a new How-To or have feedback on one listed below? Please open
 a Git
 [issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue)
-or send us [feedback](http://graphlab.com/company/contact.html). 
+or send us [feedback](http://dato.com/company/contact.html). 
 
 Data Ingress
 -------------
@@ -46,9 +46,13 @@ Image Analytics
 
 Graph Analytics
 -----------------
-* [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
 * [Implement single source shortest path using triple_apply](triple_apply_shortest_path.py)
 * [Implement weighted pagerank using triple_apply](triple_apply_weighted_pagerank.py)
+
+Visualization
+--------------
+* [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
+* [Show time-series data as a line chart in Canvas](line_chart_by_date.py)
 
 Miscellaneous
 --------------

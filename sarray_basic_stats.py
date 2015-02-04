@@ -3,7 +3,7 @@
 # it is most efficient to utilize the .apply method and specify a lambda function.
 #
 # For API documentation on the .apply() method, see here:
-# http://graphlab.com/products/create/docs/generated/graphlab.SArray.apply.html#graphlab.SArray.apply
+# http://dato.com/products/create/docs/generated/graphlab.SArray.apply.html#graphlab.SArray.apply
 
 import math
 import graphlab
@@ -19,19 +19,19 @@ logs = sa.apply(lambda x: math.log(x))
 pos = sa.apply(lambda x: abs(x))
 
 # using timeit:
-abs_results = timeit.timeit(stmt='[ abs(x) for x in sa ]', 
-                            setup='import graphlab; sa = graphlab.SArray(range(1,1000001))', 
+abs_results = timeit.timeit(stmt='[ abs(x) for x in sa ]',
+                            setup='import graphlab; sa = graphlab.SArray(range(1,1000001))',
                             number=1)
-glc_abs_results = timeit.timeit(stmt='sa.apply(lambda x: abs(x))', 
-                                setup='import graphlab; sa = graphlab.SArray(range(1,1000001))', 
+glc_abs_results = timeit.timeit(stmt='sa.apply(lambda x: abs(x))',
+                                setup='import graphlab; sa = graphlab.SArray(range(1,1000001))',
                                 number=1)
 
 print "Absolute value: "
 print "Using [ abs(x) for x in sa ] (implicit list conversion): %g" % abs_results # laptop results: 1.6541240215301514
 print "Using sa.apply(lambda x: abs(x)): %g" % glc_abs_results                    # laptop results: 0.010690927505493164
 
-# When performing other basic stats operations, it is much more efficient to 
-# use the implementations provided by SArrays. This avoids implicit 
+# When performing other basic stats operations, it is much more efficient to
+# use the implementations provided by SArrays. This avoids implicit
 # conversions to Python lists and keeps the operations in the C++ engine.
 # Examples:
 mean = sa.mean()
