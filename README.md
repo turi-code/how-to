@@ -16,6 +16,7 @@ Data Ingress
 * [Load a JSON file into an SFrame](load_json.py)
 * [Load a collection XML files into an SFrame](sframe_xml_to_dict.py)
 * [Load an Avro file into an SFrame](load_avro.py)
+* [Load a file on HDFS into an SFrame](load_hdfs.py)
 
 Tabular Data Transformation
 -----------------------------
