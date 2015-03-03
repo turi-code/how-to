@@ -4,7 +4,7 @@ Launch parallel jobs in EC2 for crawling web pages linked from Hacker News posts
 In this script, we define two top-level functions with the primary crawling
 logic, which will be distributed among a few worker nodes in EC2. The content of
 each page crawled is written to S3. We also define a utility function for
-dividing the dataset as evenly as possible. The remainder of the script is job
+dividing the data set as evenly as possible. The remainder of the script is job
 configuration logic.
 
 We use the requests module for requesting HTML pages and the boto module for
@@ -28,7 +28,7 @@ def get_source(s3_bucket, s3_save_path, _id, url):
         "my_data/html".
 
     _id : int
-        The identifer for the page, which will be used as the S3 key name (eg.
+        The identifier for the page, which will be used as the S3 key name (eg.
         "12345.html").
 
     url : str
@@ -42,7 +42,6 @@ def get_source(s3_bucket, s3_save_path, _id, url):
     """
     import requests
     import logging
-    import codecs
     import boto
     from boto.s3.connection import S3Connection
 
@@ -88,10 +87,10 @@ def get_all_source(s3_bucket, s3_save_path, id_url_pairs):
     results = []
 
     if not isinstance(s3_bucket, boto.s3.bucket.Bucket):
-        bucket = S3Connection().get_bucket(s3_bucket)
+        s3_bucket = S3Connection().get_bucket(s3_bucket)
 
     for _id, url in id_url_pairs:
-        results.append(get_source(bucket, s3_save_path, _id, url))
+        results.append(get_source(s3_bucket, s3_save_path, _id, url))
 
     return results
 
@@ -107,7 +106,7 @@ stories_sf = gl.load_sframe("s3://dato-datasets/hacker_news/stories.sframe")
 # Get a list of ID, URL pairs from SFrame
 id_url_pairs = [(x["id"], x["url"]) for x in stories_sf if x["url"]]
 
-# Divvy the list of IR, URL pairs from above and pass to n=4 workers
+# Divvy the list of ID, URL pairs from above and pass to n=4 workers
 chunks = divvy(id_url_pairs, 4)
 
 # The S3 bucket and path to where source articles are to be stored in S3
