@@ -12,9 +12,6 @@ def get_word_frequency(docs):
      'frequency' : Average number of occurances of the word in a document.
   """
 
-  # Number of docs
-  num_docs = docs.size()
-
   # Use the count_words function to count the number of words.
   docs_sf = gl.SFrame()
   docs_sf['words'] = gl.text_analytics.count_words(docs)
