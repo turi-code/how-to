@@ -25,7 +25,7 @@ def get_word_frequency(docs):
 
   # Count the number of unique words (remove None values)
   docs_sf = docs_sf.groupby('word', {'count': gl.aggregate.SUM('count')})
-  docs_sf['frequency'] = docs_sf['count'] / num_docs
+  docs_sf['frequency'] = docs_sf['count'] / docs_sf["count"].sum()
   return docs_sf
 
 # Sample SArray
