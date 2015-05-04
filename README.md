@@ -63,6 +63,7 @@ Miscellaneous
 * [Convert an SFrame into a scipy.sparse matrix](sframe_to_scipy_sparse.py)
 * [Run a function on the crossproduct of option values](experiment_over_parameters.py)
 * [Parallel web page crawling using Dato Distributed](parallel_crawling_jobs.py)
+* [Use the logging module with GraphLab Create](user_logging.py)
 
 Code submitted through pull requests will be made available under the [CC0 1.0
 Universal
