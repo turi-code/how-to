@@ -51,6 +51,11 @@ Graph Analytics
 * [Implement single source shortest path using triple_apply](triple_apply_shortest_path.py)
 * [Implement weighted pagerank using triple_apply](triple_apply_weighted_pagerank.py)
 
+Sparse matrices
+---------------
+* [Convert an SFrame into a scipy.sparse matrix](sframe_to_scipy_sparse.py)
+* [Compute approximate AtA sparse matrix product using the DIMSUM algorithm](dimsum.py)
+
 Visualization
 --------------
 * [Show SGraph with custom layout using vertex_positions and NetworkX](sgraph_show_with_nx_layout.py)
@@ -60,7 +65,6 @@ Visualization
 
 Miscellaneous
 --------------
-* [Convert an SFrame into a scipy.sparse matrix](sframe_to_scipy_sparse.py)
 * [Run a function on the crossproduct of option values](experiment_over_parameters.py)
 * [Parallel web page crawling using Dato Distributed](parallel_crawling_jobs.py)
 * [Use the logging module with GraphLab Create](user_logging.py)
