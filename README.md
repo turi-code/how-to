@@ -6,7 +6,7 @@ guide](https://github.com/graphlab-code/how-to/blob/master/CONTRIBUTING.md).
 Want to request a new How-To or have feedback on one listed below? Please open
 a Git
 [issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue)
-or send us [feedback](http://dato.com/company/contact.html). 
+or send us [feedback](http://dato.com/company/contact.html).
 
 Data Ingress
 -------------
@@ -38,6 +38,7 @@ Text Analytics
 ---------------
 * [Find the unique words used in an SArray of text documents](sarray_vocabulary.py)
 * [Compute word frequencies for each word in an SArray of text documents](word_frequency.py)
+* [Example of making predictions using topic model parameters](predict_topic_model.py)
 
 Image Analytics
 ---------------
