@@ -2,18 +2,15 @@ import graphlab as gl
 
 def get_word_frequency(docs):
   """
-  Returns the frequency of occorance of words in an SArray of documents
+  Returns the frequency of occurrence of words in an SArray of documents
   Args:
     docs: An SArray (of dtype str) of documents
   Returns:
     An SFrame with the following columns:
      'word'      : Word used
      'count'     : Number of times the word occured in all documents.
-     'frequency' : Average number of occurances of the word in a document.
+     'frequency' : Relative frequency of the word in the set of input documents.
   """
-
-  # Number of docs
-  num_docs = docs.size()
 
   # Use the count_words function to count the number of words.
   docs_sf = gl.SFrame()
@@ -25,7 +22,7 @@ def get_word_frequency(docs):
 
   # Count the number of unique words (remove None values)
   docs_sf = docs_sf.groupby('word', {'count': gl.aggregate.SUM('count')})
-  docs_sf['frequency'] = docs_sf['count'] / num_docs
+  docs_sf['frequency'] = docs_sf['count'] / docs_sf["count"].sum()
   return docs_sf
 
 # Sample SArray
