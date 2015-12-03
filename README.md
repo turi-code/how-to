@@ -17,6 +17,7 @@ Data Ingress
 * [Load a collection XML files into an SFrame](sframe_xml_to_dict.py)
 * [Load an Avro file into an SFrame](load_avro.py)
 * [Extract main article content from HTML with Boilerpipe](extract_article_content_from_HTML.py)
+* [Load a Neo4j graph from a JSON file into an SGraph](sgraph_from_neo4j_json.py)
 
 Tabular Data Transformation
 -----------------------------
