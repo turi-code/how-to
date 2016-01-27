@@ -2,15 +2,18 @@ import graphlab as gl
 import time
 
 def pagerank_update_fn(src, edge, dst):
-    dst['pagerank'] += src['prev_pagerank'] * edge['weight']
+    if src['__id'] != dst['__id']: # ignore self-links
+        dst['pagerank'] += src['prev_pagerank'] * edge['weight']
     return (src, edge, dst)
 
 def sum_weight(src, edge, dst):
-    src['total_weight'] += edge['weight']
+    if src['__id'] != dst['__id']: # ignore self-links
+        src['total_weight'] += edge['weight']
     return src, edge, dst
 
 def normalize_weight(src, edge, dst):
-    edge['weight'] /= src['total_weight']
+    if src['__id'] != dst['__id']: # ignore self-links
+        edge['weight'] /= src['total_weight']
     return src, edge, dst
 
 def pagerank_triple_apply(input_graph, reset_prob=0.15, threshold=1e-3, 
