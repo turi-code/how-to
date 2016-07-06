@@ -37,7 +37,7 @@ def get_source(s3_bucket, s3_save_path, _id, url):
     Examples
     --------
         >>> get_source("my_bucket", "data/html", 12345,
-                       "http://blog.dato.com/the-challenges-of-building-" \
+                       "http://blog.turi.com/the-challenges-of-building-" \
                        "the-next-gen-machine-learning-platform")
     """
     import requests
@@ -101,7 +101,7 @@ def divvy(items, n):
     return [items[indices[i]:indices[i + 1]] for i in xrange(n)]
 
 # Load Hacker News metadata SFrame from S3
-stories_sf = gl.load_sframe("s3://dato-datasets/hacker_news/stories.sframe")
+stories_sf = gl.load_sframe("https://static.turi.com/datasets/hacker_news/stories.sframe")
 
 # Get a list of ID, URL pairs from SFrame
 id_url_pairs = [(x["id"], x["url"]) for x in stories_sf if x["url"]]

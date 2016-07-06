@@ -41,15 +41,15 @@ def extract_article_content(src_content):
     Examples
     --------
     >>> extract_article_content(
-            "<html><body><p>Dato is in the business of building the best " \
+            "<html><body><p>Turi is in the business of building the best " \
             "machine learning platform on the planet. Our goal is to make it " \
             "easy for data scientists to build intelligent, predictive " \
             "applications quickly and at scale. Given the perplexing array " \
-            "of tools in this space, we often get asked "Why Dato? What " \
+            "of tools in this space, we often get asked "Why Turi? What " \
             "differentiates it from tools X, Y, and Z?" This blog post aims " \
             "to provide some answers. I’ll go into some technical details " \
             "about the challenges of building a predictive application, and " \
-            "how Dato’s ML platform can help.</p></body></html>")
+            "how Turi’s ML platform can help.</p></body></html>")
 
 
     See Also
@@ -69,7 +69,7 @@ def extract_article_content(src_content):
                                       (e.message, src_content[0:25]))
 
 # Get the sample source data
-source_s3_path = "https://s3.amazonaws.com/dato-datasets/how-to/html_source_sample.zip"
+source_s3_path = "https://static.turi.com/datasets/how-to/html_source_sample.zip"
 
 # Create SArray of filenames and read content of each file into SFrame
 with ZipFile(StringIO(urlopen(source_s3_path).read())) as z:

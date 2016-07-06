@@ -3,7 +3,7 @@ import graphlab as gl
 
 # Load the mnist data into an SArray of dtype array.array. This dataset comes from
 # http://yann.lecun.com/exdb/mnist/, courtesy of Yann LeCun and Corinna Cortes.
-mnist_array = gl.SArray('http://s3.amazonaws.com/GraphLab-Datasets/mnist/mnist_vec_sarray')
+mnist_array = gl.SArray('https://static.turi.com/datasets/mnist/mnist_vec_sarray')
 
 # The MNIST data is scaled from 0 to 1, but our image type only loads integer  pixel values
 # from 0 to 255. If we just convert without scaling, all values below one would be cast to

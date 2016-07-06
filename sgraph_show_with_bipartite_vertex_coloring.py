@@ -1,8 +1,8 @@
 # Show an SGraph with bipartite vertex coloring
 import graphlab as gl
 
-# Import the actors/films graph as used in https://dato.com/learn/gallery/notebooks/graph_analytics_movies.html
-sf = gl.SFrame.read_csv('https://s3.amazonaws.com/dato-datasets/americanMovies/freebase_performances.csv', column_type_hints={'year': int})
+# Import the actors/films graph as used in https://turi.com/learn/gallery/notebooks/graph_analytics_movies.html
+sf = gl.SFrame.read_csv('https://static.turi.com/datasets/americanMovies/freebase_performances.csv', column_type_hints={'year': int})
 
 # Filter to just the movies that certain actors have been in
 sf = sf[(sf['actor_name'] == 'Matt Damon') | \

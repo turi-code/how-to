@@ -1,12 +1,12 @@
 Want to contribute a GraphLab Create How-To? We welcome [pull
-requests](https://github.com/graphlab-code/how-to/pulls). Please read the
+requests](https://github.com/turi-code/how-to/pulls). Please read the
 [contributor
-guide](https://github.com/graphlab-code/how-to/blob/master/CONTRIBUTING.md).
+guide](https://github.com/turi-code/how-to/blob/master/CONTRIBUTING.md).
 
 Want to request a new How-To or have feedback on one listed below? Please open
 a Git
-[issue](https://github.com/graphlab-code/how-to/issues?q=is%3Aopen+is%3Aissue)
-or send us [feedback](http://dato.com/company/contact.html).
+[issue](https://github.com/turi-code/how-to/issues?q=is%3Aopen+is%3Aissue)
+or send us feedback at product-feedback@turi.com.
 
 Data Ingress
 -------------
@@ -68,9 +68,9 @@ Visualization
 Miscellaneous
 --------------
 * [Run a function on the crossproduct of option values](experiment_over_parameters.py)
-* [Parallel web page crawling using Dato Distributed](parallel_crawling_jobs.py)
+* [Parallel web page crawling using Turi Distributed](parallel_crawling_jobs.py)
 * [Use the logging module with GraphLab Create](user_logging.py)
 
 Code submitted through pull requests will be made available under the [CC0 1.0
 Universal
-license](https://github.com/graphlab-code/how-to/blob/master/LICENSE).
+license](https://github.com/turi-code/how-to/blob/master/LICENSE).

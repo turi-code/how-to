@@ -57,4 +57,4 @@ def load_sframe_from_avro(url):
     return sf
 
 avro_sf = load_sframe_from_avro(
-    'https://s3.amazonaws.com/GraphLab-Datasets/how-to/reviews.avro')
+    'https://static.turi.com/datasets/how-to/reviews.avro')

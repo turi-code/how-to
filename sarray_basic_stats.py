@@ -3,7 +3,7 @@
 # it is most efficient to utilize the .apply method and specify a lambda function.
 #
 # For API documentation on the .apply() method, see here:
-# http://dato.com/products/create/docs/generated/graphlab.SArray.apply.html#graphlab.SArray.apply
+# http://turi.com/products/create/docs/generated/graphlab.SArray.apply.html#graphlab.SArray.apply
 
 import math
 import graphlab
