@@ -4,7 +4,7 @@ import graphlab as gl
 
 # In order to use this feature, you must access your RDD through PySpark 1.1+
 # The user guide contains details on how to setup Spark integration
-# http://dato.com/learn/userguide/index.html#Spark_Integration
+# https://turi.com/learn/userguide/index.html#Spark_Integration
 sc = SparkContext('yarn-client')
 
 # Load a spark RDD into an SFrame

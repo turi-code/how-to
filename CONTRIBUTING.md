@@ -1,4 +1,4 @@
-# Contributing to graphlab-code/how-to
+# Contributing to turi-code/how-to
 
 A how-to is a small code snippet (roughly 2-15 lines of actual code) that shows
 how to accomplish a specific task with GraphLab Create. It may include the use

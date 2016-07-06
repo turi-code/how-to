@@ -42,7 +42,7 @@ def load_json_from_file(filename):
 
 # User the function on a toy example
 sf = load_json_from_file(
-        'https://s3.amazonaws.com/GraphLab-Datasets/how-to/customers.json')
+        'https://static.turi.com/datasets/how-to/customers.json')
 
 #+-------------+------------------+----------------+-------+
 #|     City    |       Name       |     Phone      |  Zip  |

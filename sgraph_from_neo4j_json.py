@@ -50,6 +50,6 @@ def get_sgraph_from_neo4j_json(json_filename):
     return sgraph
 
 g = get_sgraph_from_neo4j_json(
-        'https://s3.amazonaws.com/GraphLab-Datasets/how-to/movies.json')
+        'https://static.turi.com/datasets/how-to/movies.json')
 print g
 # SGraph({'num_edges': 20L, 'num_vertices': 12L})
